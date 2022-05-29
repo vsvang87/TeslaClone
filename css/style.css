@@ -1,0 +1,80 @@
+
+body {
+    font-family: 'Epilogue', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+/* Read Tesla impact report */
+.read-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .7rem 0;
+    margin: .5rem 0;
+}
+.read-menu a {
+    color: #0009;
+}
+/* Tesla Logo */
+.tesla-logo {
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: black;
+}
+ /* Navigation Bar */
+ header {
+     background-image: url(/image/model-3.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     height: 88vh;
+ }
+ .container {
+     width: min(90%, 80.5rem);
+     margin-inline: auto;
+ }
+ .navbar {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+ .nav-links-model {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-left: 3rem;
+ }
+ .nav-links-model li {
+     list-style: none;
+     padding: 0 1rem;
+     font-size: 1em;
+ }
+ .nav-links-model li a {
+     text-decoration: none;
+     color: black;
+ }
+ .nav-links-menu {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+ }
+ .nav-links-menu li {
+     list-style: none;
+     padding: 0 1rem;
+ }
+ .nav-links-menu li a {
+     text-decoration: none;
+     color: black;
+ }
+ .model-3 {
+    text-align: center;
+    line-height: 0;
+    margin-top: .5rem;
+ }
+ .model-3 h1 {
+     font-size: 3rem;
+ }
+ .model-3 a {
+     color: black;
+ }
+ 
