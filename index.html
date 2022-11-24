@@ -6,18 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!--Fontawesome CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="/css/style.css" />
     <title>Tesla Clone Site</title>
   </head>
   <body>
-    <div class="read-menu">
-      <a href="#">Read Tesla's 2021 Impact Report</a>
-    </div>
     <header>
       <div class="container">
         <nav class="navbar">
-          <a href="#" class="tesla-logo">Tesla</a>
-          <ul class="nav-links-model">
+          <a href="#" class="logo">TESLA</a>
+          <ul class="nav-links">
             <li><a href="#">Model S</a></li>
             <li><a href="#">Model 3</a></li>
             <li><a href="#">Model X</a></li>
@@ -25,22 +30,61 @@
             <li><a href="#">Solar Roof</a></li>
             <li><a href="#">Solar Panels</a></li>
           </ul>
-          <ul class="nav-links-menu">
+          <ul class="nav-links">
             <li><a href="#">Shop</a></li>
             <li><a href="#">Account</a></li>
-            <li><a href="#">Menu</a></li>
           </ul>
+          <a href="#" class="hamburger" id="hamburger">Menu</a>
         </nav>
-        <section class="section section-one">
-          <div class="container">
-            <div class="model-3">
-              <h1>Model 3</h1>
-              <p>Order Online for <a href="#">Touchless Delivery</a></p>
-            </div>
-          </div>
-        </section>
       </div>
     </header>
-    <main></main>
+    <!--Mobile Menu-->
+    <div class="mobile-nav" id="mobile-nav">
+      <button class="close-btn" id="close">
+        <i class="fa fa-solid fa-xmark"></i>
+      </button>
+      <ul class="mobile-nav-links">
+        <li><a href="#">Model S</a></li>
+        <li><a href="#">Model 3</a></li>
+        <li><a href="#">Model X</a></li>
+        <li><a href="#">Model Y</a></li>
+        <li><a href="#">Solar Roof</a></li>
+        <li><a href="#">Solar Panels</a></li>
+        <li><a href="#">Existing Inventory</a></li>
+        <li><a href="#">Used Inventory</a></li>
+        <li><a href="#">Trade-In</a></li>
+        <li><a href="#">Test Drive</a></li>
+        <li><a href="#">Insurance</a></li>
+        <li><a href="#">Account</a></li>
+      </ul>
+    </div>
+
+    <!--Mobile Menu End-->
+    <main>
+      <!--Model 3-->
+      <section class="sect model-Y">
+        <div class="container"></div>
+      </section>
+      <!--Model 3-->
+      <section class="sect model-S">
+        <div class="container"></div>
+      </section>
+      <!--Model 3-->
+      <section class="sect model-X">
+        <div class="container"></div>
+      </section>
+      <!--Model 3-->
+      <section class="sect solar-roof">
+        <div class="container"></div>
+      </section>
+      <!--Model 3-->
+      <section class="sect accessories">
+        <div class="container"></div>
+      </section>
+    </main>
+    <footer>
+      <div class="container"></div>
+    </footer>
+    <script src="/js/tesla.js"></script>
   </body>
 </html>

@@ -1,80 +1,167 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 100%;
+}
 
 body {
-    font-family: 'Epilogue', sans-serif;
-    padding: 0;
-    margin: 0;
+  font-family: 'Lato', sans-serif;
 }
-/* Read Tesla impact report */
-.read-menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: .7rem 0;
-    margin: .5rem 0;
+
+.container {
+  width: 90%;
+  margin-inline: auto;
 }
-.read-menu a {
-    color: #0009;
+
+header {
+  min-height: 100vh;
+  background-image: url(/image/model-3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Open Hamburger Button */
 }
-/* Tesla Logo */
-.tesla-logo {
-    font-size: 1.7rem;
-    text-decoration: none;
-    color: black;
+
+header .navbar {
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
- /* Navigation Bar */
- header {
-     background-image: url(/image/model-3.jpg);
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position: center;
-     height: 88vh;
- }
- .container {
-     width: min(90%, 80.5rem);
-     margin-inline: auto;
- }
- .navbar {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
- }
- .nav-links-model {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     margin-left: 3rem;
- }
- .nav-links-model li {
-     list-style: none;
-     padding: 0 1rem;
-     font-size: 1em;
- }
- .nav-links-model li a {
-     text-decoration: none;
-     color: black;
- }
- .nav-links-menu {
-     display: flex;
-     justify-content: space-around;
-     align-items: center;
- }
- .nav-links-menu li {
-     list-style: none;
-     padding: 0 1rem;
- }
- .nav-links-menu li a {
-     text-decoration: none;
-     color: black;
- }
- .model-3 {
-    text-align: center;
-    line-height: 0;
-    margin-top: .5rem;
- }
- .model-3 h1 {
-     font-size: 3rem;
- }
- .model-3 a {
-     color: black;
- }
- 
+
+@media (max-width: 1180px) {
+  header .navbar {
+    /*display: none;*/
+  }
+}
+
+header .navbar .logo {
+  letter-spacing: 0.7rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #393e46;
+}
+
+header .navbar .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+}
+
+@media (max-width: 1180px) {
+  header .navbar .nav-links {
+    display: none;
+  }
+}
+
+header .navbar .nav-links li {
+  list-style-type: none;
+  padding: 6px 20px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+header .navbar .nav-links li:hover {
+  background: #e3e3e3;
+}
+
+header .navbar .nav-links li a {
+  text-decoration: none;
+  color: #393e46;
+}
+
+header .hamburger {
+  padding: 5px 0;
+  text-decoration: none;
+  color: #393e46;
+  font-weight: bold;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+@media (max-width: 1180px) {
+  header .hamburger {
+    background: #e3e3e3;
+    padding: 5px 20px;
+    border-radius: 2px;
+  }
+}
+
+header .hamburger:hover {
+  background: #e3e3e3;
+}
+
+/* Mobile Menu */
+.mobile-nav {
+  position: fixed;
+  display: block;
+  min-height: 100vh;
+  width: 30%;
+  background: #fff;
+  right: -100%;
+  top: 0;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  z-index: 98;
+  overflow-x: hidden;
+}
+
+.mobile-nav .close-btn {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  background: #fff;
+}
+
+.mobile-nav .mobile-nav-links {
+  margin-top: 5rem;
+  list-style: none;
+}
+
+.mobile-nav .mobile-nav-links li {
+  padding: 10px 0px 10px 50px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.mobile-nav .mobile-nav-links li:hover {
+  background: #e3e3e3;
+}
+
+.mobile-nav .mobile-nav-links li a {
+  display: block;
+  text-align: left;
+  color: #393e46;
+  text-decoration: none;
+}
+
+.mobile-nav.is-active {
+  right: 0;
+}
+
+.mobile-nav.close {
+  right: -100%;
+}
+
+/* Model-Y */
+.model-Y {
+  min-height: 100vh;
+  background-image: url(/image/model-y.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*# sourceMappingURL=style.css.map */
