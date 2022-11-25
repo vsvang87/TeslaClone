@@ -330,6 +330,18 @@ header .two-buttons .custom-btn {
   }
 }
 
+@media (max-width: 425px) {
+  .model-Y .two-buttons {
+    left: 20%;
+  }
+}
+
+@media (max-width: 375px) {
+  .model-Y .two-buttons {
+    left: 14%;
+  }
+}
+
 .model-Y .two-buttons .btn {
   padding: .8rem 4rem;
   margin: 0 .6rem;
@@ -411,6 +423,18 @@ header .two-buttons .custom-btn {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media (max-width: 425px) {
+  .two-buttons {
+    left: 20%;
+  }
+}
+
+@media (max-width: 375px) {
+  .two-buttons {
+    left: 14%;
   }
 }
 
@@ -498,6 +522,18 @@ header .two-buttons .custom-btn {
   }
 }
 
+@media (max-width: 425px) {
+  .two-buttons {
+    left: 20%;
+  }
+}
+
+@media (max-width: 375px) {
+  .two-buttons {
+    left: 14%;
+  }
+}
+
 .two-buttons .btn {
   padding: .8rem 4rem;
   margin: 0 .6rem;
@@ -579,6 +615,18 @@ header .two-buttons .custom-btn {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media (max-width: 425px) {
+  .two-buttons {
+    left: 20%;
+  }
+}
+
+@media (max-width: 375px) {
+  .two-buttons {
+    left: 14%;
   }
 }
 
@@ -666,6 +714,18 @@ header .two-buttons .custom-btn {
   }
 }
 
+@media (max-width: 425px) {
+  .two-buttons {
+    left: 20%;
+  }
+}
+
+@media (max-width: 375px) {
+  .two-buttons {
+    left: 14%;
+  }
+}
+
 .two-buttons .btn {
   padding: .8rem 4rem;
   margin: 0 .6rem;
@@ -748,6 +808,18 @@ header .two-buttons .custom-btn {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media (max-width: 425px) {
+  .accessories .two-buttons {
+    left: 20%;
+  }
+}
+
+@media (max-width: 375px) {
+  .accessories .two-buttons {
+    left: 20%;
   }
 }
 

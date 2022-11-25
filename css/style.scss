@@ -245,6 +245,12 @@ z-index: 1;
         @include mediaQuery780px{
             flex-direction: column;
         }
+        @include mediaQuery425px{
+            left: 20%;
+        }
+        @include mediaQuery375px{
+            left: 14%;
+        }
         .btn{
             padding: .8rem 4rem;
             margin: 0 .6rem;
@@ -300,6 +306,12 @@ z-index: 1;
     @include mediaQuery780px{
         flex-direction: column;
     }
+    @include mediaQuery425px{
+        left: 20%;
+    }
+    @include mediaQuery375px{
+        left: 14%;
+    }
     .btn{
         padding: .8rem 4rem;
         margin: 0 .6rem;
@@ -352,6 +364,12 @@ bottom: 50%;
 left: 30%;
 @include mediaQuery780px{
     flex-direction: column;
+}
+@include mediaQuery425px{
+    left: 20%;
+}
+@include mediaQuery375px{
+    left: 14%;
 }
 .btn{
     padding: .8rem 4rem;
@@ -406,6 +424,12 @@ left: 30%;
 @include mediaQuery780px{
     flex-direction: column;
 }
+@include mediaQuery425px{
+    left: 20%;
+}
+@include mediaQuery375px{
+    left: 14%;
+}
 .btn{
     padding: .8rem 4rem;
     margin: 0 .6rem;
@@ -459,6 +483,12 @@ left: 30%;
     left: 30%;
     @include mediaQuery780px{
         flex-direction: column;
+    }
+    @include mediaQuery425px{
+        left: 20%;
+    }
+    @include mediaQuery375px{
+        left: 14%;
     }
     .btn{
         padding: .8rem 4rem;
@@ -515,6 +545,13 @@ p{
     @include mediaQuery780px{
         flex-direction: column;
     }
+    @include mediaQuery425px{
+        left: 20%;
+    }
+    @include mediaQuery375px{
+        left: 20%;
+    }
+    
     .shop-btn{
         padding: .8rem 4rem;
         margin: 0 .6rem;
@@ -527,6 +564,7 @@ p{
             margin: .5rem 0;
             width: 100%;
         }
+       
     }
 }
 /* Reveal */
