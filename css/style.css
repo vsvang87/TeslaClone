@@ -40,12 +40,6 @@ header .navbar {
   top: 0;
 }
 
-@media (max-width: 1180px) {
-  header .navbar {
-    /*display: none;*/
-  }
-}
-
 header .navbar .logo {
   letter-spacing: 0.7rem;
   text-decoration: none;
@@ -84,7 +78,8 @@ header .navbar .nav-links li a {
 }
 
 header .hamburger {
-  padding: 5px 0;
+  padding: 5px 0.5rem;
+  border-radius: 2px;
   text-decoration: none;
   color: #393e46;
   font-weight: bold;
@@ -156,6 +151,18 @@ header .two-buttons {
   }
 }
 
+@media (max-width: 425px) {
+  header .two-buttons {
+    left: 20%;
+  }
+}
+
+@media (max-width: 375px) {
+  header .two-buttons {
+    left: 14%;
+  }
+}
+
 header .two-buttons .btn {
   padding: .8rem 4rem;
   margin: 0 .6rem;
@@ -198,7 +205,7 @@ header .two-buttons .custom-btn {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 425px) {
   .mobile-nav {
     width: 70%;
   }

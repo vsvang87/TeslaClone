@@ -18,8 +18,13 @@ $hoverBackground: #b7b7b7;
         @content;
     }
 }
-@mixin mediaQuery450px{
-    @media(max-width: 450px){
+@mixin mediaQuery425px{
+    @media(max-width: 425px){
+        @content;
+    }
+}
+@mixin mediaQuery375px{
+    @media(max-width: 375px){
         @content;
     }
 }
@@ -45,11 +50,7 @@ header{
         align-items: center;
         position: sticky;
         top: 0;
-        @include mediaQuery{
-            /*display: none;*/
-           
-           
-        }
+        
         .logo{
             letter-spacing: 0.7rem;
             text-decoration: none;
@@ -81,7 +82,8 @@ header{
     }
     /* Open Hamburger Button */
     .hamburger{
-        padding: 5px 0;
+        padding: 5px 0.5rem;
+        border-radius: 2px;
         text-decoration: none;
         color: $fontColor;
         font-weight: bold;
@@ -121,6 +123,13 @@ header{
         @include mediaQuery780px{
             flex-direction: column;
         }
+        @include mediaQuery425px{
+            left: 20%;
+        }
+        @include mediaQuery375px{
+            left: 14%;
+        }
+       
         .btn{
             padding: .8rem 4rem;
             margin: 0 .6rem;
@@ -155,7 +164,7 @@ z-index: 1;
 @include mediaQuery780px{
     width: 50%;
 }
-@include mediaQuery450px{
+@include mediaQuery425px{
     width: 70%;
 }
 .close-btn{
