@@ -6,11 +6,21 @@
 }
 
 $fontColor: #393e46;
-$hoverBackground: #e3e3e3;
+$hoverBackground: #b7b7b7;
 
 @mixin mediaQuery{
     @media (max-width: 1180px){
         @content
+    }
+}
+@mixin mediaQuery780px{
+    @media(max-width: 780px){
+        @content;
+    }
+}
+@mixin mediaQuery450px{
+    @media(max-width: 450px){
+        @content;
     }
 }
 
@@ -33,6 +43,8 @@ header{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: sticky;
+        top: 0;
         @include mediaQuery{
             /*display: none;*/
            
@@ -56,6 +68,7 @@ header{
                 transition: 0.2s ease-in-out;
                 &:hover{
                     background: $hoverBackground;
+                    border-radius: 2px;
                 }
                 a{
                     
@@ -82,7 +95,49 @@ header{
             background: $hoverBackground;
         }
     }
-    
+    .intro-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h1{
+            font-size: 2.5rem;
+            margin-top: 1.8rem;
+            letter-spacing: 0.05rem;
+        }
+        a{
+            padding: .5rem 0;
+            color: $fontColor;
+        }
+    }
+    .two-buttons{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 77%;
+        bottom: 50%;
+        left: 30%;
+        @include mediaQuery780px{
+            flex-direction: column;
+        }
+        .btn{
+            padding: .8rem 4rem;
+            margin: 0 .6rem;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            @include mediaQuery780px{
+                margin: .5rem 0;
+                width: 100%;
+            }
+        }
+        .custom-btn{
+            background: $fontColor;
+            color: #fff;
+            font-weight: bold;
+        }
+    }
 }
 
 /* Mobile Menu */
@@ -95,8 +150,14 @@ background: #fff;
 right: -100%;
 top: 0;
 transition: 0.5s ease-in-out;
-z-index: 98;
 overflow-x: hidden;
+z-index: 1;
+@include mediaQuery780px{
+    width: 50%;
+}
+@include mediaQuery450px{
+    width: 70%;
+}
 .close-btn{
     position: absolute;
     top: 25px;
@@ -135,9 +196,354 @@ overflow-x: hidden;
 }
 /* Model-Y */
 .model-Y {
-    min-height: 100vh;
+    min-height: 110vh;
     background-image: url(/image/model-y.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    .model-Y-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h1{
+            padding-top: 7rem;
+        }
+        .intro-content{
+            display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h1{
+            font-size: 2.5rem;
+            margin-top: 1.8rem;
+            letter-spacing: 0.05rem;
+        }
+        a{
+            padding: .5rem 0;
+            color: $fontColor;
+        }
+        }
+    }
+    .two-buttons{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 77%;
+        bottom: 50%;
+        left: 30%;
+        @include mediaQuery780px{
+            flex-direction: column;
+        }
+        .btn{
+            padding: .8rem 4rem;
+            margin: 0 .6rem;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            @include mediaQuery780px{
+                margin: .5rem 0;
+                width: 100%;
+            }
+        }
+        .custom-btn{
+            background: $fontColor;
+            color: #fff;
+            font-weight: bold;
+        }
+    }
 }
+/* Model S */
+.model-S{
+    background-image: url(/image/model-s.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 110vh;
+    position: relative;
+    .intro-content{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    h1{
+        font-size: 2.5rem;
+        margin-top: 1.8rem;
+        letter-spacing: 0.05rem;
+        padding-top: 6rem;
+    }
+    a{
+        padding: .5rem 0;
+        color: $fontColor;
+    }
+    }
+}
+.two-buttons{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 77%;
+    bottom: 50%;
+    left: 30%;
+    @include mediaQuery780px{
+        flex-direction: column;
+    }
+    .btn{
+        padding: .8rem 4rem;
+        margin: 0 .6rem;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        @include mediaQuery780px{
+            margin: .5rem 0;
+            width: 100%;
+        }
+    }
+    .custom-btn{
+        background: $fontColor;
+        color: #fff;
+        font-weight: bold;
+    }
+}
+/* Model X */
+.model-X{
+background-image: url(/image/model-x.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+min-height: 110vh;
+position: relative;
+.intro-content{
+    display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+h1{
+    font-size: 2.5rem;
+    margin-top: 1.8rem;
+    letter-spacing: 0.05rem;
+    padding-top: 6rem;
+}
+a{
+    padding: .5rem 0;
+    color: $fontColor;
+}
+}
+}
+.two-buttons{
+position: absolute;
+display: flex;
+align-items: center;
+justify-content: center;
+top: 77%;
+bottom: 50%;
+left: 30%;
+@include mediaQuery780px{
+    flex-direction: column;
+}
+.btn{
+    padding: .8rem 4rem;
+    margin: 0 .6rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    @include mediaQuery780px{
+        margin: .5rem 0;
+        width: 100%;
+    }
+}
+.custom-btn{
+    background: $fontColor;
+    color: #fff;
+    font-weight: bold;
+}
+}
+/* Solar Roof */
+.solar-panel{
+    background-image: url(/image/solar-panels.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+background-size: cover;
+min-height: 110vh;
+position: relative;
+.intro-content{
+    display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+h1{
+    font-size: 2.5rem;
+    margin-top: 1.8rem;
+    letter-spacing: 0.05rem;
+    padding-top: 6rem;
+}
+p{
+    padding: .5rem 0;
+    color: $fontColor;
+}
+}
+}
+.two-buttons{
+position: absolute;
+display: flex;
+align-items: center;
+justify-content: center;
+top: 77%;
+bottom: 50%;
+left: 30%;
+@include mediaQuery780px{
+    flex-direction: column;
+}
+.btn{
+    padding: .8rem 4rem;
+    margin: 0 .6rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    @include mediaQuery780px{
+        margin: .5rem 0;
+        width: 100%;
+    }
+}
+.custom-btn{
+    background: $fontColor;
+    color: #fff;
+    font-weight: bold;
+}
+}
+/* Solar Roof */
+.solar-roof{
+    background-image: url(/image/solar-roof.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 110vh;
+    position: relative;
+
+    .intro-content{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1{
+        font-size: 2.5rem;
+        margin-top: 1.8rem;
+        letter-spacing: 0.05rem;
+        padding-top: 6rem;
+    }
+    p{
+        padding: .5rem 0;
+        color: $fontColor;
+    }
+    }
+    }
+    .two-buttons{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 77%;
+    bottom: 50%;
+    left: 30%;
+    @include mediaQuery780px{
+        flex-direction: column;
+    }
+    .btn{
+        padding: .8rem 4rem;
+        margin: 0 .6rem;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        @include mediaQuery780px{
+            margin: .5rem 0;
+            width: 100%;
+        }
+    }
+    .custom-btn{
+        background: $fontColor;
+        color: #fff;
+        font-weight: bold;
+    }
+}
+
+/* Accessories */
+.accessories{
+    background-image: url(/image/accessories.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 110vh;
+    position: relative;
+
+.intro-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+h1{
+    font-size: 2.5rem;
+    margin-top: 1.8rem;
+    letter-spacing: 0.05rem;
+    padding-top: 6rem;
+}
+p{
+    padding: .5rem 0;
+    color: $fontColor;
+}
+
+}
+.two-buttons{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 77%;
+    bottom: 50%;
+    left: 42%;
+    @include mediaQuery780px{
+        flex-direction: column;
+    }
+    .shop-btn{
+        padding: .8rem 4rem;
+        margin: 0 .6rem;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        background: $fontColor;
+        color: #fff;
+        @include mediaQuery780px{
+            margin: .5rem 0;
+            width: 100%;
+        }
+    }
+}
+/* Reveal */
+.reveal{
+    
+    transform: translateY(100px);
+    opacity: 0;
+}
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+}
+footer{
+    .footer-content{
+        padding: 1.5rem 0;
+        text-align: center;
+        a{
+            text-decoration: none;
+            color: $fontColor;
+            padding: 0 .5rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+    }
+}
+
+

@@ -35,6 +35,9 @@ header .navbar {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 @media (max-width: 1180px) {
@@ -71,7 +74,8 @@ header .navbar .nav-links li {
 }
 
 header .navbar .nav-links li:hover {
-  background: #e3e3e3;
+  background: #b7b7b7;
+  border-radius: 2px;
 }
 
 header .navbar .nav-links li a {
@@ -90,14 +94,87 @@ header .hamburger {
 
 @media (max-width: 1180px) {
   header .hamburger {
-    background: #e3e3e3;
+    background: #b7b7b7;
     padding: 5px 20px;
     border-radius: 2px;
   }
 }
 
 header .hamburger:hover {
-  background: #e3e3e3;
+  background: #b7b7b7;
+}
+
+header .intro-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header .intro-content h1 {
+  font-size: 2.5rem;
+  margin-top: 1.8rem;
+  letter-spacing: 0.05rem;
+}
+
+header .intro-content a {
+  padding: .5rem 0;
+  color: #393e46;
+}
+
+header .two-buttons {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 77%;
+  bottom: 50%;
+  left: 30%;
+}
+
+@media (max-width: 780px) {
+  header .two-buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+header .two-buttons .btn {
+  padding: .8rem 4rem;
+  margin: 0 .6rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+@media (max-width: 780px) {
+  header .two-buttons .btn {
+    margin: .5rem 0;
+    width: 100%;
+  }
+}
+
+header .two-buttons .custom-btn {
+  background: #393e46;
+  color: #fff;
+  font-weight: bold;
 }
 
 /* Mobile Menu */
@@ -111,8 +188,20 @@ header .hamburger:hover {
   top: 0;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
-  z-index: 98;
   overflow-x: hidden;
+  z-index: 1;
+}
+
+@media (max-width: 780px) {
+  .mobile-nav {
+    width: 50%;
+  }
+}
+
+@media (max-width: 450px) {
+  .mobile-nav {
+    width: 70%;
+  }
 }
 
 .mobile-nav .close-btn {
@@ -138,7 +227,7 @@ header .hamburger:hover {
 }
 
 .mobile-nav .mobile-nav-links li:hover {
-  background: #e3e3e3;
+  background: #b7b7b7;
 }
 
 .mobile-nav .mobile-nav-links li a {
@@ -158,10 +247,544 @@ header .hamburger:hover {
 
 /* Model-Y */
 .model-Y {
-  min-height: 100vh;
+  min-height: 110vh;
   background-image: url(/image/model-y.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+
+.model-Y .model-Y-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.model-Y .model-Y-content h1 {
+  padding-top: 7rem;
+}
+
+.model-Y .model-Y-content .intro-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.model-Y .model-Y-content .intro-content h1 {
+  font-size: 2.5rem;
+  margin-top: 1.8rem;
+  letter-spacing: 0.05rem;
+}
+
+.model-Y .model-Y-content .intro-content a {
+  padding: .5rem 0;
+  color: #393e46;
+}
+
+.model-Y .two-buttons {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 77%;
+  bottom: 50%;
+  left: 30%;
+}
+
+@media (max-width: 780px) {
+  .model-Y .two-buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.model-Y .two-buttons .btn {
+  padding: .8rem 4rem;
+  margin: 0 .6rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+@media (max-width: 780px) {
+  .model-Y .two-buttons .btn {
+    margin: .5rem 0;
+    width: 100%;
+  }
+}
+
+.model-Y .two-buttons .custom-btn {
+  background: #393e46;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Model S */
+.model-S {
+  background-image: url(/image/model-s.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 110vh;
+  position: relative;
+}
+
+.model-S .intro-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.model-S .intro-content h1 {
+  font-size: 2.5rem;
+  margin-top: 1.8rem;
+  letter-spacing: 0.05rem;
+  padding-top: 6rem;
+}
+
+.model-S .intro-content a {
+  padding: .5rem 0;
+  color: #393e46;
+}
+
+.two-buttons {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 77%;
+  bottom: 50%;
+  left: 30%;
+}
+
+@media (max-width: 780px) {
+  .two-buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.two-buttons .btn {
+  padding: .8rem 4rem;
+  margin: 0 .6rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+@media (max-width: 780px) {
+  .two-buttons .btn {
+    margin: .5rem 0;
+    width: 100%;
+  }
+}
+
+.two-buttons .custom-btn {
+  background: #393e46;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Model X */
+.model-X {
+  background-image: url(/image/model-x.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 110vh;
+  position: relative;
+}
+
+.model-X .intro-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.model-X .intro-content h1 {
+  font-size: 2.5rem;
+  margin-top: 1.8rem;
+  letter-spacing: 0.05rem;
+  padding-top: 6rem;
+}
+
+.model-X .intro-content a {
+  padding: .5rem 0;
+  color: #393e46;
+}
+
+.two-buttons {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 77%;
+  bottom: 50%;
+  left: 30%;
+}
+
+@media (max-width: 780px) {
+  .two-buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.two-buttons .btn {
+  padding: .8rem 4rem;
+  margin: 0 .6rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+@media (max-width: 780px) {
+  .two-buttons .btn {
+    margin: .5rem 0;
+    width: 100%;
+  }
+}
+
+.two-buttons .custom-btn {
+  background: #393e46;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Solar Roof */
+.solar-panel {
+  background-image: url(/image/solar-panels.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 110vh;
+  position: relative;
+}
+
+.solar-panel .intro-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.solar-panel .intro-content h1 {
+  font-size: 2.5rem;
+  margin-top: 1.8rem;
+  letter-spacing: 0.05rem;
+  padding-top: 6rem;
+}
+
+.solar-panel .intro-content p {
+  padding: .5rem 0;
+  color: #393e46;
+}
+
+.two-buttons {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 77%;
+  bottom: 50%;
+  left: 30%;
+}
+
+@media (max-width: 780px) {
+  .two-buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.two-buttons .btn {
+  padding: .8rem 4rem;
+  margin: 0 .6rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+@media (max-width: 780px) {
+  .two-buttons .btn {
+    margin: .5rem 0;
+    width: 100%;
+  }
+}
+
+.two-buttons .custom-btn {
+  background: #393e46;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Solar Roof */
+.solar-roof {
+  background-image: url(/image/solar-roof.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 110vh;
+  position: relative;
+}
+
+.solar-roof .intro-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.solar-roof .intro-content h1 {
+  font-size: 2.5rem;
+  margin-top: 1.8rem;
+  letter-spacing: 0.05rem;
+  padding-top: 6rem;
+}
+
+.solar-roof .intro-content p {
+  padding: .5rem 0;
+  color: #393e46;
+}
+
+.two-buttons {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 77%;
+  bottom: 50%;
+  left: 30%;
+}
+
+@media (max-width: 780px) {
+  .two-buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.two-buttons .btn {
+  padding: .8rem 4rem;
+  margin: 0 .6rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+@media (max-width: 780px) {
+  .two-buttons .btn {
+    margin: .5rem 0;
+    width: 100%;
+  }
+}
+
+.two-buttons .custom-btn {
+  background: #393e46;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Accessories */
+.accessories {
+  background-image: url(/image/accessories.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 110vh;
+  position: relative;
+  /* Reveal */
+}
+
+.accessories .intro-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.accessories .intro-content h1 {
+  font-size: 2.5rem;
+  margin-top: 1.8rem;
+  letter-spacing: 0.05rem;
+  padding-top: 6rem;
+}
+
+.accessories .intro-content p {
+  padding: .5rem 0;
+  color: #393e46;
+}
+
+.accessories .two-buttons {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 77%;
+  bottom: 50%;
+  left: 42%;
+}
+
+@media (max-width: 780px) {
+  .accessories .two-buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.accessories .two-buttons .shop-btn {
+  padding: .8rem 4rem;
+  margin: 0 .6rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  background: #393e46;
+  color: #fff;
+}
+
+@media (max-width: 780px) {
+  .accessories .two-buttons .shop-btn {
+    margin: .5rem 0;
+    width: 100%;
+  }
+}
+
+.accessories .reveal {
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  opacity: 0;
+}
+
+.accessories .reveal.active {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  opacity: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+footer .footer-content {
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+footer .footer-content a {
+  text-decoration: none;
+  color: #393e46;
+  padding: 0 .5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
 }
 /*# sourceMappingURL=style.css.map */
